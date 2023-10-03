@@ -1,0 +1,65 @@
+19
+===
+a=int(input())
+b=list(map(int,input().split()))
+s=[]
+k=[]
+for i in b:
+    if i not in s:
+        s.append(i)
+    else:
+        k.append(i)
+ma=max(s)
+p=0
+for i in range(len(k)):
+    ma=ma+1
+    p+=ma-k[i]
+print(p)            
+=======
+a,b=map(int,input().split())
+c=list(map(int,input().split()))
+e=[]
+for i in c:
+    if i not in e:
+        e.append(i)
+d=[]        
+for i in e:
+    if(c.count(i)>=b):
+        d.append(i)
+if(len(d)>0):
+    
+    s=[]        
+    for i in range(len(d)):
+        p=0
+        for j in range(len(c)):
+            if(d[i]==c[j]):
+                p+=j
+        s.append(p)        
+    ans=s.index(min(s))
+
+    print(d[ans])
+else:
+    print(-1)     
+
+=======================
+
+
+
+
+
+
+
+
+
+
+git bash:
+create a dir
+create a file
+craete a sub dir
+create a file in sub dir
+use git init to initialize the repo
+create a repo in remote vcs
+push the complete existing repo to remote vcs
+
+        
+
